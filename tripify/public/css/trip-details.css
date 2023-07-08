@@ -1,0 +1,121 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+  
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.trip-image {
+    width: 100%;
+    height: 800px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.sold-out-container {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #DC3545;
+    border-radius: 5px;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-card {
+    flex-direction: row;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    padding: 10px;
+}
+
+.destination-card img {
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.destination-title-container > h3 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.destination-title-container > h3::before {
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.destination-title-container > h3::after {
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.detail-containers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail-containers h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.residence-container, .vehicle-container, .extra-info-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.book-reservation {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.book-reservation:hover {
+    border: 1px solid #000000;
+    transition: all 0.25s ease-in-out;
+}
+
+.book-reservation-button {
+    width: 100%;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
