@@ -93,3 +93,19 @@ p, h5 {
 .add-new-trip-button {
     font-size: 2em;
 }
+
+.agency-reservation-card {
+    display: flex;
+    align-items: center;
+}
+
+.approve-cancel-button-container {
+    margin-right: 3%;
+    display: flex;
+}
+
+.approve-button, .cancel-button {
+    width: 150px;
+    margin-right: 4px;
+    margin-left: 4px;
+}

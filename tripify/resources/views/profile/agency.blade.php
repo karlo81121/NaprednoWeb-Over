@@ -73,17 +73,19 @@
                         </div>
                     </div>
 
-                    <form id="approve" action="{{ url('/reservation/approve/' . $reservation->id) }}" method="POST">
-                        @csrf
+                    <div class="approve-cancel-button-container">
+                        <form id="approve" action="{{ url('/reservation/approve/' . $reservation->id) }}" method="POST">
+                            @csrf
 
-                        <button type="submit" class="btn btn-success mt-2">APPROVE</button>
-                    </form>
+                            <button type="submit" class="btn btn-success approve-button mt-2">APPROVE</button>
+                        </form>
 
-                    <form id="cancel" action="{{ url('/reservation/delete/' . $reservation->id) }}" method="POST">
-                        @csrf
+                        <form id="cancel" action="{{ url('/reservation/delete/' . $reservation->id) }}" method="POST">
+                            @csrf
 
-                        <button type="submit" class="btn btn-danger mt-2">CANCEL</button>
-                    </form>
+                            <button type="submit" class="btn btn-danger cancel-button mt-2">CANCEL</button>
+                        </form>
+                    </div>
                 </div>
             @endforeach
         </div>
